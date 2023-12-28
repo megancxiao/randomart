@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "../styles/styles.css"
 
 const RandomArtwork = () => {
   const [artwork, setArtwork] = useState(null);
@@ -38,17 +39,20 @@ const RandomArtwork = () => {
     <div className="artwork-card">
       {artwork ? (
         <>
-          {artwork.primaryImageSmall ? (
+          <a
+            href={`https://www.metmuseum.org/art/collection/search/${artwork.objectID}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={artwork.primaryImageSmall} alt={artwork.title} />
-          ) : (
-            <p>No image available</p>
-          )}
+          </a>
           <h2>{artwork.title}</h2>
+          
           <p>{artwork.artistDisplayName}</p>
           {/* You can display more information about the artwork */}
         </>
       ) : (
-        <p>Loading...</p>
+        <p>Art is loading... please wait a sec :)</p>
       )}
     </div>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
-import RandomArtwork from './script.js'; // Assuming RandomArtwork component is in a separate file
+import './styles/App.css';
+import RandomArtwork from './components/ArtCard.js'; // Assuming RandomArtwork component is in a separate file
 
 const App = () => {
   return (

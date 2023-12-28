@@ -1,0 +1,53 @@
+/* styles.css */
+
+.artwork-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    height: auto;
+    margin: auto;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .artwork-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .artwork-card h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  
+  .artwork-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .artwork-card p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .artwork-card p.no-image {
+    font-style: italic;
+    color: #999;
+  }
+  
